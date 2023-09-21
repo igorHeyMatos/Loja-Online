@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+}
+
+header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    background: #71dbd2;
+    color: #fcfcfc;
+    height: 15vh;
+}
+
+#titulo {
+    color: #fcfcfc;
+}
+
+.logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
