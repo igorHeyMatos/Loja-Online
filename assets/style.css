@@ -11,18 +11,12 @@ body {
 }
 
 header {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-row: 1 / 2;
     display: grid;
-    /* background: #f58723; */
-    /* background: #d53d0c; */
-    /* background: #880606; */
-    /* background: #85e6c0; */
     background: #71dbd2;
     color: #fcfcfc;
-    /* color: #000000; */
-    /* box-shadow: 10px 10px 10px 10px #d4c9ad; */
-    height: 20vh;
+    height: 15vh;
 }
 
 .logo {
@@ -63,30 +57,42 @@ a:hover {
 }
 
 main {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-row: 2 / 3;
     display: grid;
-    height: 60vh;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1rem;
+    padding: 10px;
 }
 
-.item {
-    width: 100px;
-    height: 100px;
-    background: red;
+article {
+    height: 500px;
+    border-radius: 4px;
+    background-color: white;
     box-shadow: 5px 5px 5px 5px #daf3ea;
-    grid-column: 1 / 4;
-    grid-row: 1 / -1;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 200px;
+    height: 200px;
 }
 
 footer {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-row: 3 / 4;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #85e6c0; */
     background: #71dbd2;
     color: #fcfcfc;
-    height: 20vh;
+    height: 15vh;
     font-size: 20px;
 }
