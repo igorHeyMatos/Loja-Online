@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -93,4 +96,46 @@ footer {
     color: #fcfcfc;
     height: 15vh;
     font-size: 20px;
+}
+
+#btn {
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: #6bb39b;
+}
+
+tr {
+    border: 1px solid #71dbd2;
+}
+
+th {
+    border: 1px solid #71dbd2;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #71dbd2;
+    padding: 10px;
+}
+
+aside {
+    width: 300px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #daf3ea;
+    position: fixed;
+    right: -100vw;
+    max-height: 100vh;
+}
+
+#btnClose {
+    color: #6bb39b;
+    cursor: pointer;
+}
+
+#btnClose:hover {
+    color: #4f7b6c;
 }

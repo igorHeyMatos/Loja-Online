@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:wght@300;400;500;700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/930f300dba.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -26,25 +30,25 @@
             <h3>Fone de ouvido</h3>
             <img src="./assets/FonesBluetooth.webp" alt="">
             <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <i id="btn" class="fa-solid fa-plus" onclick="adicionarFone()"></i>
         </article>
         <article>
             <h3>Celulares</h3>
             <img src="./assets/Celulares.jpg" alt="">
             <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <i id="btn" class="fa-solid fa-plus" onclick="adicionarCelular()"></i>
         </article>
         <article>
             <h3>Luvas para Academia</h3>
             <img src="./assets/LuvasAcad.jpg" alt="">
             <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <i id="btn" class="fa-solid fa-plus" onclick="adicionarLuvas()"></i>
         </article>
         <article>
             <h3>Smartwatches</h3>
             <img src="./assets/Smartwatches.jpg" alt="">
             <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <i id="btn" class="fa-solid fa-plus" onclick="adicionarSmartWatches()"></i>
         </article>
         <article>
             <h3>Balança de comida</h3>
@@ -96,8 +100,31 @@
         </article>
     </main>
 
+    <aside id="carrinho">
+        <div class="cabecalho-carrinho">
+            <h3>Carrinho</h3>
+            <i id="btnClose" class="fa-regular fa-circle-xmark" onclick="carrinhoClose()"></i>
+        </div>
+        
+        <div class="conteudo-carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Itens</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        
+            
+    </aside>
+
     <footer>
         &copy;igorHeyMatos
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
