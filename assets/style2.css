@@ -15,13 +15,19 @@ header {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     display: grid;
-    background: #71dbd2;
     color: #fcfcfc;
     height: 15vh;
+    background: url(/assets/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #titulo {
     color: #fcfcfc;
+}
+
+#titulo:hover {
+    color: #6bb39b;
 }
 
 .logo {
@@ -33,12 +39,32 @@ header {
     flex-direction: column;
 }
 
+.menu {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina {
+    color: #fcfcfc;
+}
+
+.pagina:hover {
+    color: #6bb39b;
+}
+
 h1 {
     font-size: 40px;
 }
 
 h4 {
     font-size: 20px;
+}
+
+h4:hover {
+    color: #6bb39b;
 }
 
 a {
@@ -52,7 +78,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    border: 1px solid #71dbd2;
+    border-bottom: 2px solid #6bb39b;
 }
 
 main {
@@ -78,6 +104,19 @@ article {
     justify-content: center;
     text-align: center;
     justify-content: space-around;
+}
+
+.tituloProd {
+    color: #7e7e7e;
+    padding: 10px;
+}
+
+.links {
+    color: #4f7b6c;
+}
+
+.links:hover {
+    color: #6bb39b;
 }
 
 img {

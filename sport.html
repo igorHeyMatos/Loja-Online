@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:wght@300;400;500;700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/930f300dba.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/cart-shopping-solid.svg" type="image/x-icon">
 </head>
 <body>
@@ -19,43 +20,92 @@
             
             <h4>Sua loja online!</h4>
         </div>
+
+        <div class="menu">
+            <a class="pagina" href="index.html">Início</a>
+            <a class="pagina">Esportes</a>
+            <a class="pagina" href="produtos.html">Produtos</a>
+        </div>
     </header>
 
     <main>
         <article>
-            <h3>Luvas para Academia</h3>
+            <h3 class="tituloProd">Luvas para Academia</h3>
             <img src="./assets/LuvasAcad.jpg" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 7.00</h4>
+                <p onclick="adicionarLuvas()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Balança de comida</h3>
+            <h3 class="tituloProd">Balança de comida</h3>
             <img src="./assets/Balanca.jpg" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 50.00</h4>
+                <p onclick="adicionarBalanca()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Tênis Esportivo</h3>
+            <h3 class="tituloProd">Tênis Esportivo F</h3>
             <img src="./assets/TenisEsportivo1.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 120.00</h4>
+                <p onclick="adicionarTenis1()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Tênis Esportivo</h3>
+            <h3 class="tituloProd">Tênis Esportivo M</h3>
             <img src="./assets/TenisEsportivo2.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 130.00</h4>
+                <p onclick="adicionarTenis2()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Camisa para Academia</h3>
+            <h3 class="tituloProd">Camisa para Academia</h3>
             <img src="./assets/CamisaAcad.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 50.00</h4>
+                <p onclick="adicionarCamisa()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
     </main>
+
+    <aside id="carrinho">
+        <div class="cabecalho-carrinho">
+            <h3><i id="btnCarrinho" class="fa-solid fa-cart-shopping"></i> Carrinho</h3>
+            <i id="btnClose" class="fa-regular fa-circle-xmark" onclick="carrinhoClose()"></i>
+        </div>
+        
+        <div class="conteudo-carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Itens</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        
+            
+    </aside>
 
     <footer>
         &copy;igorHeyMatos
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

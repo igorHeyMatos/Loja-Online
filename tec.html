@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:wght@300;400;500;700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/930f300dba.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/cart-shopping-solid.svg" type="image/x-icon">
 </head>
 <body>
@@ -19,55 +20,112 @@
             
             <h4>Sua loja online!</h4>
         </div>
+
+        <div class="menu">
+            <a class="pagina" href="index.html">Início</a>
+            <a class="pagina">Tecnologia</a>
+            <a class="pagina" href="produtos.html">Produtos</a>
+        </div>
     </header>
 
     <main>
         <article>
-            <h3>Fone de ouvido</h3>
+            <h3 class="tituloProd">Fone de ouvido</h3>
             <img src="./assets/FonesBluetooth.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 12.00</h4>
+                <p onclick="adicionarFone()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Celulares</h3>
+            <h3 class="tituloProd">Celulares</h3>
             <img src="./assets/Celulares.jpg" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 800.00</h4>
+                <p onclick="adicionarCelular()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Smartwatches</h3>
+            <h3 class="tituloProd">Smartwatches</h3>
             <img src="./assets/Smartwatches.jpg" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 120.00</h4>
+                <p onclick="adicionarSmartWatches()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Gabinete Gamer</h3>
+            <h3 class="tituloProd">Gabinete Gamer</h3>
             <img src="./assets/GabineteGamer.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 70.00</h4>
+                <p onclick="adicionarGabineteGamer()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Gabinete Gamer Rosa</h3>
+            <h3 class="tituloProd">Gabinete Gamer Rosa</h3>
             <img src="./assets/GabineteGamerRosa.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 70.00</h4>
+                <p onclick="adicionarGabineteRosa()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Gabinete Gamer</h3>
+            <h3 class="tituloProd">Gabinete Gamer Colorido</h3>
             <img src="./assets/GabineteGamerColorido.webp" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 70.00</h4>
+                <p onclick="adicionarGabineteGamerC()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
         <article>
-            <h3>Fone de ouvido</h3>
+            <h3 class="tituloProd">Fone de ouvido</h3>
             <img src="./assets/exibicao-de-fones-de-ouvido-de-musica-levitando.jpg" alt="">
-            <h4>Descrição</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis consequuntur tempore mollitia, quam non fugit, nulla quos, a incidunt quidem? Voluptas at magni, fugit repellat non velit. Consectetur, ut.</p>
+            <div class="desc">
+                <h4 class="descricao">Descrição</h4>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
+                <h4 class="preco">Preço: 80.00</h4>
+                <p onclick="adicionarHeadFone()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+            </div>
         </article>
     </main>
+
+    <aside id="carrinho">
+        <div class="cabecalho-carrinho">
+            <h3><i id="btnCarrinho" class="fa-solid fa-cart-shopping"></i> Carrinho</h3>
+            <i id="btnClose" class="fa-regular fa-circle-xmark" onclick="carrinhoClose()"></i>
+        </div>
+        
+        <div class="conteudo-carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Itens</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        
+            
+    </aside>
 
     <footer>
         &copy;igorHeyMatos
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
