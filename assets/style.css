@@ -171,6 +171,10 @@ td {
     padding: 10px;
 }
 
+#tbody {
+    text-align: center;
+}
+
 aside {
     width: 300px;
     border-radius: 4px;
@@ -221,6 +225,15 @@ aside {
     grid-row: 2;
     display: flex;
     justify-content: center;
+}
+
+#btnExcluir {
+    color: #71dbd2;
+    cursor: pointer;
+}
+
+#btnExcluir:hover {
+    color: #6bb39b;
 }
 
 @media(max-width: 600px){
