@@ -94,7 +94,6 @@ main {
 
 article {
     height: 300px;
-    border-radius: 4px;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #daf3ea;
     display: grid;

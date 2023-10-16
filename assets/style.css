@@ -71,7 +71,6 @@ main {
 
 article {
     height: 500px;
-    border-radius: 4px;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #daf3ea;
     display: grid;
@@ -135,10 +134,6 @@ img {
     cursor: pointer;
 }
 
-#btn:hover {
-    color: #6bb39b;
-}
-
 footer {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
@@ -177,12 +172,12 @@ td {
 
 aside {
     width: 300px;
-    border-radius: 4px;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #daf3ea;
     position: fixed;
     right: -100vw;
     max-height: 100vh;
+    transition: 0.5s all;
 }
 
 #carrinho {

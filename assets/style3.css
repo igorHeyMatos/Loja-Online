@@ -85,7 +85,6 @@ main {
 
 article {
     height: 500px;
-    border-radius: 4px;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #daf3ea;
     display: grid;
@@ -148,10 +147,6 @@ img {
 
 #btn {
     cursor: pointer;
-}
-
-#btn:hover {
-    color: #6bb39b;
 }
 
 img {
