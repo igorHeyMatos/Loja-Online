@@ -94,6 +94,7 @@ article {
     justify-content: center;
     text-align: center;
     justify-content: space-around;
+    transition: 0.5s all;
 }
 
 
