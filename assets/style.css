@@ -217,7 +217,7 @@ aside {
 
 .conteudo-carrinho {
     grid-column: 1 / 4;
-    grid-row: 2;
+    grid-row: 2 / 3;
     display: flex;
     justify-content: center;
 }
@@ -230,6 +230,25 @@ aside {
 #btnExcluir:hover {
     color: #6bb39b;
 }
+
+#valores {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloValor {
+    padding: 5px;
+}
+
+#valorFinal {
+    font-size: 18px;
+}
+
 
 @media(max-width: 600px){
 
