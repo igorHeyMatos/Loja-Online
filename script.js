@@ -1,22 +1,31 @@
-function adicionarFone(){
+let fones = document.getElementById("fones");
+let celular = document.getElementById("celulares");
+let luvas = document.getElementById("luvas");
+let smartwatches = document.getElementById("smartwatches");
+let balanca = document.getElementById("balanca");
+let tenisF = document.getElementById("tenisF");
+let tenisM = document.getElementById("tenisM");
+let camisas = document.getElementById("camisas");
+let gabineteB = document.getElementById("gabineteB");
+let gabineteR = document.getElementById("gabineteR");
+let gabineteC = document.getElementById("gabineteC");
+let headFone = document.getElementById("headFone");
+
+function adicionar(item,preco){
     let tabela = document.getElementById("tbody");
     let linha = document.createElement('tr');
-    let item = "Fones de ouvido";
-    let preco = "120.00";
     let inserir = document.createElement('td');
     let valor = document.createElement('td');
     let acao = document.createElement('td');
     let carrinho = document.getElementById("carrinho");
     carrinho.style.right = '0';
-    
     tabela.appendChild(linha);
     linha.appendChild(inserir);
     linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
+    linha.appendChild(acao)
+    inserir.innerHTML = `${item}`
+    valor.innerHTML = `${preco}`
     acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`
-
     acao.addEventListener('click', () => {
         linha.removeChild(inserir);
         linha.removeChild(valor);
@@ -24,291 +33,77 @@ function adicionarFone(){
     })
 }
 
-function adicionarCelular(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Celular";
-    let preco = "800.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
+fones.addEventListener('click', () => {
+    item = "Fones de ouvido";
+    preco = "120.00";
+    adicionar(item,preco);
+})
 
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`
+celular.addEventListener('click', () => {
+    item = "Celular";
+    preco = "800.00";
+    adicionar(item,preco);
+})
 
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
+luvas.addEventListener('click', () => {
+    item = "Luvas para Academia";
+    preco = "7.00";
+    adicionar(item,preco);
+})
 
-function adicionarLuvas(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Luvas para Academia";
-    let preco = "7.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
+smartwatches.addEventListener('click', () => {
+    item = "SmartWatches";
+    preco = "120.00";
+    adicionar(item,preco);
+})
 
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
+balanca.addEventListener('click', () => {
+    item = "Balança de comida";
+    preco = "50.00";
+    adicionar(item,preco);
+})
 
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
+tenisF.addEventListener('click', () => {
+    item = "Tênis Esportivo (F)";
+    preco = "120.00";
+    adicionar(item,preco);
+})
 
-function adicionarSmartWatches(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "SmartWatches";
-    let preco = "120.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
+tenisM.addEventListener('click', () => {
+    item = "Tênis Esportivo (M)";
+    preco = "130.00";
+    adicionar(item,preco);
+})
 
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
+camisas.addEventListener('click', () => {
+    item = "Camisas";
+    preco = "50.00";
+    adicionar(item,preco);
+})
 
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
+gabineteB.addEventListener('click', () => {
+    item = "Gabinete Gamer";
+    preco = "70.00";
+    adicionar(item,preco);
+})
 
-function adicionarBalanca(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Balança de comida";
-    let preco = "50.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-    
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
+gabineteR.addEventListener('click', () => {
+    item = "Gabinete Gamer Rosa";
+    preco = "70.00";
+    adicionar(item,preco);
+})
 
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
+gabineteC.addEventListener('click', () => {
+    item = "Gabinete Gamer Colorido";
+    preco = "70.00";
+    adicionar(item,preco);
+})
 
-function adicionarTenis1(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Tênis Esportivo (F)";
-    let preco = "120.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
-
-function adicionarTenis2(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Tênis Esportivo (M)";
-    let preco = "130.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
-
-function adicionarCamisa(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Camisas";
-    let preco = "50.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
-
-function adicionarGabineteGamer(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Gabinete Gamer";
-    let preco = "70.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
-
-function adicionarGabineteRosa(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Gabinete Gamer Rosa";
-    let preco = "70.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
-
-function adicionarGabineteGamerC(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "Gabinete Gamer Colorido";
-    let preco = "70.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
-
-function adicionarHeadFone(){
-    let tabela = document.getElementById("tbody");
-    let linha = document.createElement('tr');
-    let item = "HeadFone";
-    let preco = "80.00";
-    let inserir = document.createElement('td');
-    let valor = document.createElement('td');
-    let acao = document.createElement('td');
-    let carrinho = document.getElementById("carrinho");
-    carrinho.style.right = '0';
-
-    tabela.appendChild(linha);
-    linha.appendChild(inserir);
-    linha.appendChild(valor);
-    linha.appendChild(acao);
-    inserir.innerHTML = `${item}`;
-    valor.innerHTML = `${preco}`;
-    acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`;
-
-    acao.addEventListener('click', () => {
-        linha.removeChild(inserir);
-        linha.removeChild(valor);
-        linha.removeChild(acao);
-    })
-}
+headFone.addEventListener('click', () => {
+    item = "HeadFone";
+    preco = "80.00";
+    adicionar(item,preco);
+})
 
 function carrinhoClose(){
     let carrinho = document.getElementById("carrinho");
