@@ -12,6 +12,7 @@ let gabineteC = document.getElementById("gabineteC");
 let headFone = document.getElementById("headFone");
 let vet = [];
 let valorFinal = document.getElementById("valorFinal");
+let btnFinalizar = document.getElementById("btn-finalizar");
 
 function adicionar(item,preco){
     let tabela = document.getElementById("tbody");
@@ -30,9 +31,11 @@ function adicionar(item,preco){
     valor.innerHTML = `${preco}`
     acao.innerHTML = `<i id="btnExcluir" class="fa-regular fa-trash-can"></i>`
     acao.addEventListener('click', () => {
+        soma -= preco;
         linha.removeChild(inserir);
         linha.removeChild(valor);
         linha.removeChild(acao);
+        valorFinal.innerHTML = `R$ ${soma}`;
     })
     vet.push(Number(preco));
     for(let i = 0; i < vet.length; i++){
@@ -116,4 +119,12 @@ headFone.addEventListener('click', () => {
 function carrinhoClose(){
     let carrinho = document.getElementById("carrinho");
     carrinho.style.right = '-100%';
+}
+
+btnFinalizar.addEventListener('click', () => {
+    alert("Compra concluida com sucesso!");
+})
+
+function BTNFinalizar(){
+    alert("Compra concluida com sucesso!");
 }

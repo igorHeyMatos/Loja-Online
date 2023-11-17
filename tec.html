@@ -35,8 +35,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 12.00</h4>
-                <p onclick="adicionarFone()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 120.00</h4>
+                <p id="fones" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -45,8 +45,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 800.00</h4>
-                <p onclick="adicionarCelular()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 800.00</h4>
+                <p id="celulares" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -55,9 +55,10 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 120.00</h4>
-                <p onclick="adicionarSmartWatches()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 120.00</h4>
+                <p id="smartwatches" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
+        </article>
         </article>
         <article>
             <h3 class="tituloProd">Gabinete Gamer</h3>
@@ -65,8 +66,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 70.00</h4>
-                <p onclick="adicionarGabineteGamer()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 70.00</h4>
+                <p id="gabineteB" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -75,8 +76,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 70.00</h4>
-                <p onclick="adicionarGabineteRosa()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 70.00</h4>
+                <p id="gabineteR" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -85,8 +86,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 70.00</h4>
-                <p onclick="adicionarGabineteGamerC()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 70.00</h4>
+                <p id="gabineteC" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -95,8 +96,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 80.00</h4>
-                <p onclick="adicionarHeadFone()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 80.00</h4>
+                <p id="headFone" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
     </main>
@@ -120,7 +121,14 @@
             </table>
         </div>
         
-            
+        <div id="valores">
+            <h3 id="tituloValor">Valor total a pagar: <h3 id="valorFinal"></h3> </h3>
+        </div>
+
+        <div class="finalizar-compra">
+            <input type="button" id="btn-finalizar" onclick="BTNFinalizar()" value="Finalizar compra">
+        </div>
+        
     </aside>
 
     <footer>

@@ -35,8 +35,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 7.00</h4>
-                <p onclick="adicionarLuvas()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 7.00</h4>
+                <p id="luvas" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -45,8 +45,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 50.00</h4>
-                <p onclick="adicionarBalanca()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 50.00</h4>
+                <p id="balanca" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -55,9 +55,10 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 120.00</h4>
-                <p onclick="adicionarTenis1()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 120.00</h4>
+                <p id="tenisF" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
+            
         </article>
         <article>
             <h3 class="tituloProd">Tênis Esportivo M</h3>
@@ -65,8 +66,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 130.00</h4>
-                <p onclick="adicionarTenis2()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 130.00</h4>
+                <p id="tenisM" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
         <article>
@@ -75,8 +76,8 @@
             <div class="desc">
                 <h4 class="descricao">Descrição</h4>
                 <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur accusamus atque nemo suscipit illum deserunt voluptas quis, quo et.</p>
-                <h4 class="preco">Preço: 50.00</h4>
-                <p onclick="adicionarCamisa()" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
+                <h4 class="preco">Preço: R$ 50.00</h4>
+                <p id="camisas" class="addTexto">Adicionar ao carrinho <i id="btn" class="fa-solid fa-plus" ></i></p>
             </div>
         </article>
     </main>
@@ -100,9 +101,15 @@
             </table>
         </div>
         
-            
-    </aside>
+        <div id="valores">
+            <h3 id="tituloValor">Valor total a pagar: <h3 id="valorFinal"></h3> </h3>
+        </div>
 
+        <div class="finalizar-compra">
+            <input type="button" id="btn-finalizar" onclick="BTNFinalizar()" value="Finalizar compra">
+        </div>
+        
+    </aside>
     <footer>
         &copy;igorHeyMatos
     </footer>
